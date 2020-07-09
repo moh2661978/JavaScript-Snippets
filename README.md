@@ -1,2 +1,2 @@
-# MyFirstJavaScriptInputLabel
-My First JavaSript Input Label
+# JavaScript-Snippets
+JavaScript-Snippets
