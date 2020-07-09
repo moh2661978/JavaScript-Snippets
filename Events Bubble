@@ -1,0 +1,22 @@
+<p id="eggInput">
+  <label>
+    Type:
+    <select id="eggType">
+      <option value="Cage eggs">Cage</option>
+      <option value="Barn Laid eggs">Barn Laid</option>
+      <option value="Free Range eggs">Free Range</option>
+      <option value="Organic eggs">Organic</option>
+    </select>
+  </label>
+  <label>
+    Number:
+    <input id="eggNumber" type="number" min="6" max="24" step="6" value="6">
+  </label>
+</p>
+<p id="eggOrder"></p>
+<script>
+  function changeAction() {
+    eggOrder.textContent = "Ok, I want " + eggNumber.value + " of the " + eggType.value;
+  }
+  eggInput.onchange = changeAction;
+</script>
