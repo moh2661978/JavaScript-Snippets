@@ -29,7 +29,7 @@
 
 // Put your JavaScript here
 function update() {
-  amount.textContent = amountInput.value;
+  amount.textContent = "Ok, I will buy "+amountInput.value;
   protein.textContent = proteinSelect.value;
 }
 amountInput.oninput = update;
