@@ -1,0 +1,67 @@
+<!-- JavaScript
+onclick - an event we can listen to that is triggered whenever you click an element.
+
+oninput - an event we can listen to that is triggered whenever an element receives input.
+
+onchange - an event we can listen to that is triggered whenever an element changes, usually something that you click, like a drop down.
+
+on{Event Name} - a way to listen to any event.
+
+function - keyword that tells the browser that we are starting a function.
+
+( and ) - parenthesis, used in a function to show which part is the arguments.
+
+{ and } - curly brackets, used in a function to show which part is the block.
+
+HTML
+select - a new element for selecting from different options, usually in a drop down.
+
+option - a new element for describing the options available in a select.
+
+type - an attribute on input elements that decides what type of input it is.
+
+value - an attribute on input and option elements that describes the value of the element.
+
+max, min, step - attributes available on the number and range inputs for configuring them.
+
+Example
+Using these together:
+ -->
+<h1 id="score">00</h1>
+<h2 id="player">Name</h2>
+<h3 id="colour">Colour</h3>
+<p>
+  <label id="playerLabel">
+    Name: 
+    <input type="text" id="playerInput">
+  </label>
+</p>
+<p>
+  <label id="scoreLabel">
+    Score: 
+    <input type="range" value="0" max="99" id="scoreInput">
+  </label>
+</p>
+<p>
+  <label>
+    Colour:
+    <select id="colourSelect">
+      <option value="Pink">Pink</option>
+      <option value="Blue">Blue</option>
+      <option value="Purple">Purple</option>
+      <option value="Green">Green</option>
+    </select>
+  </label>
+</p>
+
+<script>
+function update() {
+  player.textContent = playerInput.value;
+  score.textContent = scoreInput.value;
+  colour.textContent = colourSelect.value;
+}
+
+playerInput.oninput = update;
+scoreInput.oninput = update;
+colourSelect.onchange = update;
+</script>
