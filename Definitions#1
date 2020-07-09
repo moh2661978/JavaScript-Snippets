@@ -1,0 +1,24 @@
+Definitions
+We learned a lot of new words in this module. Here's the full list of them!
+
+Events
+----------
+Event - something that can happen on the web page, usually done by a user. For example: clicking a button.
+
+Trigger - the act of making an event happen. For example: Clicking a button triggers the click event.
+
+Listen - to wait for an event to trigger. For example: "I'm listening to the click event" means I'm waiting for the click event to happen.
+
+Functions
+-----------
+Function - a block of code that has a particular function. It isn't run straight away. It can be run later, and can be run many times.
+
+Arguments - input to a function.
+
+Block - an area of code surrounded by squiggly brackets. Used by a function statement to indicate code which it controls.
+
+Outside - code that is not controlled by the block, it appears outside of the squiggly brackets ({ and }).
+
+Inside - code that is controlled by the block, it appears between the squiggly brackets ({ and }).
+
+Indentation - an extra way to show what is inside the block. Indentation uses spaces to push code over and make it more readable.
