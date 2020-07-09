@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color: red;">IS JAVASCRIPT Awesome? Why?</h1>
+<p>
+  <label>
+    Answer: <input id="answerInput">
+  </label>
+</p>
+
+<p>
+  <label>
+    Why: <input id="whyInput">
+  </label>
+</p>
+
+<p>
+  My answer: JAVASCRIPT is <span id="answer"></span><br>
+  That's because <span id="why"></span><br>
+</p>
+
+<script>
+  function inputAction() {
+    answer.textContent=answerInput.value;
+    why.textContent=whyInput.value;
+  }
+
+answerInput.oninput= inputAction;
+whyInput.oninput=inputAction;
+
+</script>
+
+</body>
+</html>
